@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: dev
+# MyBatis
+mybatis:
+    # 配置类型别名
+    #typeAliasesPackage: com.zsx.entity
+    # 配置mapper的扫描，找到所有的mapper.xml映射文件
+    mapperLocations: classpath:mybatis/mapper/*.xml
+    # 加载全局的配置文件
+    configLocation: classpath:mybatis/mybatis-config.xml
